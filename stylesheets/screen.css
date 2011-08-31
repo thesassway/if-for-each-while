@@ -1,21 +1,21 @@
-.if {
+.some-selector {
   display: block;
 }
 
-.for-1 {
-  width: 61px;
+.photo-1 {
+  background: url('/images/photo.png') no-repeat left 1px;
 }
 
-.for-2 {
-  width: 62px;
+.photo-2 {
+  background: url('/images/photo.png') no-repeat left 2px;
 }
 
-.for-3 {
-  width: 63px;
+.photo-3 {
+  background: url('/images/photo.png') no-repeat left 3px;
 }
 
-.for-4 {
-  width: 64px;
+.photo-4 {
+  background: url('/images/photo.png') no-repeat left 4px;
 }
 
 .author-bio .photo-adam {

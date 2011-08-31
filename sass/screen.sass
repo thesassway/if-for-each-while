@@ -3,7 +3,7 @@
 // Set a variable to run the if statement against
 $boolean: true !default
 
-=if
+=simple-mixin
   @if $boolean
     @debug "$boolean is #{$boolean}"
     display: block
@@ -11,8 +11,8 @@ $boolean: true !default
     @debug "$boolean is #{$boolean}"
     display: none
 
-.if
-  +if
+.some-selector
+  +simple-mixin
 
 // For
 
