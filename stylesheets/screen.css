@@ -14,6 +14,10 @@
   width: 63px;
 }
 
+.for-4 {
+  width: 64px;
+}
+
 .author-bio .photo-adam {
   background: url('/images/avatars/adam.png') no-repeat;
 }
