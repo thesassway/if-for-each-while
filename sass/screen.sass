@@ -1,0 +1,45 @@
+// If
+
+// Set a variable to run the if statement against
+$boolean: true !default
+
+=if
+  @if $boolean
+    @debug "$boolean is #{$boolean}"
+    display: block
+  @else
+    @debug "$boolean is #{$boolean}"
+    display: none
+
+.if
+  +if
+
+// For
+
+$class-slug: for !default
+
+@for $i from 1 through 4
+  .#{$class-slug}-#{$i}
+    width: 60px + $i
+
+// Each
+
+$list: adam john wynn mason kuroir
+
+=author-images
+  @each $author in $list
+    .photo-#{$author}
+      background: image-url("avatars/#{$author}.png") no-repeat
+
+.author-bio
+  +author-images
+
+// While
+
+$types: 4
+$type-width: 20px
+
+@while $types > 0
+  .while-#{$types}
+    width: $type-width + $types
+  $types: $types - 1
